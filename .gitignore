@@ -1,0 +1,107 @@
+########################################
+# Python
+########################################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+*.log
+
+########################################
+# Virtual Environments
+########################################
+venv/
+env/
+.venv/
+ENV/
+pythonenv*/
+
+########################################
+# Jupyter
+########################################
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.notebooks/
+
+########################################
+# Data (NEVER commit raw or processed data)
+########################################
+data/raw/
+data/interim/
+data/processed/
+data/preprocessed/
+*.csv
+*.parquet
+*.feather
+
+########################################
+# Models & Artifacts
+########################################
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.onnx
+
+# (OPTIONAL) keep structure but ignore files
+!models/.gitkeep
+
+########################################
+# Experiments & Tracking
+########################################
+mlruns/
+wandb/
+tensorboard/
+logs/
+
+########################################
+# Environment Variables & Secrets
+########################################
+.env
+.env.*
+*.key
+*.pem
+*.crt
+secrets/
+credentials/
+
+########################################
+# OS & Editor
+########################################
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+########################################
+# Docker
+########################################
+*.dockerignore
+docker-compose.override.yml
+
+########################################
+# Build & Cache
+########################################
+build/
+dist/
+.cache/
+pip-wheel-metadata/
+
+########################################
+# Test & Coverage
+########################################
+.coverage
+htmlcov/
+pytest_cache/
+
+########################################
+# FastAPI / Uvicorn
+########################################
+*.pid
+uvicorn.log
+gunicorn.log
