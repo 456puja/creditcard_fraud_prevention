@@ -10,12 +10,11 @@ The solution emphasizes robust model evaluation, class-imbalance handling, and c
 
 This project uses the Credit Card Fraud Detection dataset, which contains anonymized transaction features and highly imbalanced fraud labels.
 
-Source: Kaggle
-Dataset Link: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
-Records: 284,807 transactions
-Fraud Rate: ~0.17%
-Features: PCA-transformed features (V1–V28), Amount, Time
-
+* Source: Kaggle
+* Dataset Link: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+* Records: 284,807 transactions
+* Fraud Rate: ~0.17%
+* Features: PCA-transformed features (V1–V28), Amount, Time
 
 ### 🎯 Business Objective
 
@@ -37,34 +36,36 @@ Features: PCA-transformed features (V1–V28), Amount, Time
 
 ### 🗂️ Project Structure
 
+<pre>
 CreditCard_Fraud_Prevention/
 ├── app/
-│   ├── main.py                     # FastAPI application entrypoint
-│   ├── schemas.py                  # Request and response schemas
-│   └── utils.py                    # Utility and helper functions
+│   ├── main.py                       # FastAPI application entrypoint
+│   ├── schemas.py                    # Request and response schemas
+│   └── utils.py                      # Utility and helper functions
 ├── data/
-│   ├── raw/                        # Original raw datasets (ignored via .gitignore)
-│   ├── processed/                  # Preprocessed data used for modeling (ignored via .gitignore)
+│   ├── raw/                          # Original raw datasets (ignored via .gitignore)
+│   └── processed/                    # Preprocessed data used for modeling (ignored via .gitignore)
 ├── models/
-│   ├── fraud_model.pkl             # Final trained Random Forest model
-│   ├── scaler.pkl                  # Feature scaler
-│   ├── pipeline.pkl                # End-to-end inference pipeline
+│   ├── fraud_model.pkl               # Final trained Random Forest model
+│   ├── scaler.pkl                    # Feature scaler
+│   └── pipeline.pkl                  # End-to-end inference pipeline
 ├── src/
-│   ├── data_preprocessing.py       # Data cleaning and preprocessing logic
-│   ├── feature_engineering.py      # Feature engineering transformations
-│   ├── model.py                    # Model training and selection logic
-│   ├── pipeline.py                 # Training and inference pipeline creation
-│   └── utils.py                    # Shared utility functions
+│   ├── data_preprocessing.py         # Data cleaning and preprocessing logic
+│   ├── feature_engineering.py        # Feature engineering transformations
+│   ├── model.py                      # Model training and selection logic
+│   ├── pipeline.py                   # Training and inference pipeline creation
+│   └── utils.py                      # Shared utility functions
 ├── notebooks/
-│   ├── 01_eda.ipynb                # Exploratory Data Analysis
-│   ├── 02_data_preprocessing.ipynb # Data cleaning and preprocessing
-│   ├── 03_feature_engineering.ipynb# Feature engineering and transformations
-│   ├── 04_model_training.ipynb     # Model training and pipeline creation
-│   └── 05_model_evaluation.ipynb   # Model evaluation and threshold analysis
-├── requirements.txt                # Project dependencies
-├── Dockerfile                      # Docker configuration
-├── .gitignore                      # Git ignore rules
-├── README.md                       # Project documentation 
+│   ├── 01_eda.ipynb                  # Exploratory Data Analysis
+│   ├── 02_data_preprocessing.ipynb   # Data cleaning and preprocessing
+│   ├── 03_feature_engineering.ipynb  # Feature engineering and transformations
+│   ├── 04_model_training.ipynb       # Model training and pipeline creation
+│   └── 05_model_evaluation.ipynb     # Model evaluation and threshold analysis
+├── requirements.txt                  # Project dependencies
+├── Dockerfile                        # Docker configuration
+├── .gitignore                        # Git ignore rules
+└── README.md                         # Project documentation
+</pre>
 
 
 ### ⚙️ Tech Stack & Purpose
@@ -120,7 +121,6 @@ uvicorn app.main:app --reload
 
 4️⃣ Open Swagger UI
 http://127.0.0.1:8000/docs
-
 
 
 ### 🐳 Deployment Using Docker
