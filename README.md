@@ -7,17 +7,17 @@ In this repository, we build a Fraud Detection Model for a financial and e-comme
 
 📌 Project Goal
 
-Develop a production-ready system that detects fraudulent credit card transactions in real-time, minimizes false positives, and provides a scalable API for integration with financial and e-commerce platforms.
+Develop a production ready system that detects fraudulent credit card transactions in real time, minimizes false positives, and provides a scalable API for integration with financial and e-commerce platforms.
 
 
 🛑 Problem Statement
 
-Credit card fraud causes significant financial losses and damages customer trust. Traditional rule-based detection systems are often slow, rigid, and prone to false positives, making them inefficient for real-time transactions. There is a need for a machine learning-based system that can accurately identify fraudulent transactions in real-time, reduce false positives, and support scalable deployment for financial and e-commerce platforms.
+Credit card fraud causes significant financial losses and damages customer trust. Traditional rule based detection systems are often slow, rigid, and prone to false positives, making them inefficient for real time transactions. There is a need for a machine learning based system that can accurately identify fraudulent transactions in real-time, reduce false positives, and support scalable deployment for financial and e-commerce platforms.
 
 
 ### 📌 Project Overview
 
-This project implements a production-ready Credit Card Fraud Detection system using machine learning best practices. It covers the complete ML lifecycle—from feature engineering and model training to scalable inference and deployment—designed for real-world payment fraud prevention systems.
+This project implements a production ready Credit Card Fraud Detection system using machine learning best practices. It covers the complete ML lifecycle from feature engineering and model training to scalable inference and deployment designed for real-world payment fraud prevention systems.
 
 This project uses the Credit Card Fraud Detection dataset, which contains anonymized transaction features and highly imbalanced fraud labels.
 
