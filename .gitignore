@@ -40,10 +40,10 @@ data/preprocessed/
 ########################################
 # Models & Artifacts
 ########################################
-models/*.pkl
-models/*.joblib
-models/*.h5
-models/*.onnx
+#models/*.pkl
+#models/*.joblib
+#models/*.h5
+#models/*.onnx
 
 # (OPTIONAL) keep structure but ignore files
 !models/.gitkeep
@@ -105,3 +105,4 @@ pytest_cache/
 *.pid
 uvicorn.log
 gunicorn.log
+
