@@ -99,7 +99,7 @@ def evaluate_models(models: dict, X_test, y_test):
         print(f"{name} ROC-AUC: {roc_auc:.4f}")
 
     best_model_name = max(scores, key=scores.get)
-    print(f"\n✅ Selected Best Model: {best_model_name} (ROC-AUC = {scores[best_model_name]:.4f})")
+    print(f"\nSelected Best Model: {best_model_name} (ROC-AUC = {scores[best_model_name]:.4f})")
 
     return best_model_name, models[best_model_name]
 
@@ -113,7 +113,7 @@ def save_model(model, filename="fraud_model.pkl"):
     Deployment-ready, reproducible model artifact.
     """
     joblib.dump(model, MODEL_DIR / filename)
-    print(f"✅ Model saved at {MODEL_DIR / filename}")
+    print(f"Model saved at {MODEL_DIR / filename}")
 
 
 # -----------------------------

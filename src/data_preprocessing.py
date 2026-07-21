@@ -130,7 +130,7 @@ def run_data_preprocessing():
     y_train_balanced.to_csv(PROCESSED_DATA_DIR / "y_train.csv", index=False)
     y_test.to_csv(PROCESSED_DATA_DIR / "y_test.csv", index=False)
 
-    print("✅ Data preprocessing completed successfully.")
+    print("Data preprocessing completed successfully.")
 
 
 # -----------------------------

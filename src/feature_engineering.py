@@ -158,7 +158,7 @@ def run_feature_engineering():
     X_train_scaled.to_csv(DATA_DIR / "X_train_fe.csv", index=False)
     X_test_scaled.to_csv(DATA_DIR / "X_test_fe.csv", index=False)
 
-    print("✅ Feature engineering completed successfully.")
+    print("Feature engineering completed successfully.")
 
 
 # -----------------------------

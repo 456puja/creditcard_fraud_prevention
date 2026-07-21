@@ -170,7 +170,6 @@ docker run -d -p 8000:8000 credit-card-fraud-api
 
 
 ### 🏁 Conclusion
-
 This project demonstrates a complete, industry-aligned ML system for fraud detection, combining robust modeling practices with production-ready deployment. It reflects real-world ML engineering workflows and is suitable as a portfolio-grade project for machine learning and data engineering roles.
 
 

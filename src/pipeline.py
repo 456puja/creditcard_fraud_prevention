@@ -27,16 +27,16 @@ def run_full_pipeline():
     """
     Execute the full end-to-end fraud detection ML pipeline.
     """
-    print("🔹 Starting Data Preprocessing...")
+    print("Starting Data Preprocessing...")
     run_data_preprocessing()
 
-    print("\n🔹 Starting Feature Engineering...")
+    print("\n Starting Feature Engineering...")
     run_feature_engineering()
 
-    print("\n🔹 Starting Model Training...")
+    print("\n Starting Model Training...")
     run_model_training()
 
-    print("\n✅ End-to-End Pipeline Completed Successfully!")
+    print("\n End-to-End Pipeline Completed Successfully!")
 
 
 # -----------------------------
